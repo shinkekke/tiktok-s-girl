@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>限定公開動画</title>
 
-    <!-- ▼▼▼ ここは後で書き換えます（今はそのままでOK） ▼▼▼ -->
+    <!-- ▼▼▼ 偽装・画像設定 ▼▼▼ -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@fantia_official">
     <meta property="og:site_name" content="Fantia (ファンティア)">
     
-    <!-- タイトル -->
+    <!-- タイトル：刺激的でクリックしたくなる文言 -->
     <meta property="og:title" content="【閲覧注意】生意気なM男をわからせてみた（完全版）">
     <meta name="twitter:title" content="【閲覧注意】生意気なM男をわからせてみた（完全版）">
     
-    <!-- 説明文 -->
+    <!-- 説明文：続きが気になるような焦らし -->
     <meta property="og:description" content="※削除覚悟※ 躾がなってないので教育します。後半の屈辱シーンは必見。">
     <meta name="twitter:description" content="※削除覚悟※ 躾がなってないので教育します。後半の屈辱シーンは必見。">
 
-    <!-- 画像の設定（後で修正します） -->
-    <meta property="og:image" content="https://DUMMY-URL/card.png?v=s1">
-    <meta name="twitter:image" content="https://DUMMY-URL/card.png?v=s1">
+    <!-- ★画像URL設定（あなたのURLを設定済み）★ -->
+    <!-- キャッシュ回避のため ?v=final01 をつけています -->
+    <meta property="og:image" content="https://tiktok-s-girl.vercel.app/card.png?v=final01">
+    <meta name="twitter:image" content="https://tiktok-s-girl.vercel.app/card.png?v=final01">
 
 
-    <!-- ▼▼▼ デザイン設定（黒背景・怪しい雰囲気） ▼▼▼ -->
+    <!-- ▼▼▼ デザイン設定（黒背景・アダルト雰囲気） ▼▼▼ -->
     <style>
         body {
-            background-color: #050505; /* 真っ黒 */
+            background-color: #050505; /* 漆黒の背景 */
             color: #eeeeee; /* 白文字 */
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -37,9 +38,13 @@
             margin: 0;
             text-align: center;
         }
-        .container { width: 90%; max-width: 400px; }
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
         .play-btn {
-            background: linear-gradient(45deg, #c31432, #240b36); /* 赤紫のグラデーション */
+            /* 赤〜紫の怪しいグラデーションボタン */
+            background: linear-gradient(45deg, #c31432, #240b36);
             color: white;
             border: 1px solid #ff4d6d;
             padding: 20px 0;
@@ -50,8 +55,14 @@
             cursor: pointer;
             text-decoration: none;
             display: block;
-            margin: 25px 0;
-            box-shadow: 0 0 15px rgba(195, 20, 50, 0.6); /* 光らせる */
+            margin-top: 25px;
+            margin-bottom: 25px;
+            /* ボタンを怪しく光らせる演出 */
+            box-shadow: 0 0 15px rgba(195, 20, 50, 0.6);
+            transition: transform 0.1s;
+        }
+        .play-btn:active {
+            transform: scale(0.98);
         }
         .warning {
             color: #ff3333;
@@ -60,30 +71,43 @@
             padding: 5px 10px;
             display: inline-block;
             margin-bottom: 15px;
+            letter-spacing: 2px;
         }
     </style>
 
-    <!-- ▼▼▼ アプリへ飛ばす仕掛け ▼▼▼ -->
+    <!-- ▼▼▼ ロジック設定（確認画面なしでアプリ起動） ▼▼▼ -->
     <script>
+        // TikTok Liteの招待リンク
         var targetUrl = "https://lite.tiktok.com/t/ZS91fhwGHRk8J-OicBG/";
+
         function openTikTok() {
+            // ユニバーサルリンク機能でアプリへ直行
             window.location.href = targetUrl;
         }
     </script>
 </head>
 <body>
+
     <div class="container">
+        <!-- 警告マーク -->
         <div class="warning">R-18 指定</div>
-        <div class="title" style="font-weight: bold; font-size: 20px;">
+        
+        <!-- 誘導メッセージ -->
+        <div class="title" style="font-weight: bold; font-size: 20px; line-height: 1.5;">
             動画を再生するには<br>下のボタンを押してください
         </div>
-        <!-- ボタン -->
+
+        <!-- 視聴ボタン -->
         <button class="play-btn" onclick="openTikTok()">
             完全版を無料で見る
         </button>
+
+        <!-- 注意書き -->
         <div class="note" style="font-size: 11px; color: #666;">
-            ※リンク切れの場合はご容赦ください
+            ※リンク切れの場合はご容赦ください<br>
+            ※18歳未満の視聴は禁止されています
         </div>
     </div>
+
 </body>
 </html>
