@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>限定公開動画</title>
+
+    <!-- ▼▼▼ ここは後で書き換えます（今はそのままでOK） ▼▼▼ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fantia_official">
+    <meta property="og:site_name" content="Fantia (ファンティア)">
+    
+    <!-- タイトル -->
+    <meta property="og:title" content="【閲覧注意】生意気なM男をわからせてみた（完全版）">
+    <meta name="twitter:title" content="【閲覧注意】生意気なM男をわからせてみた（完全版）">
+    
+    <!-- 説明文 -->
+    <meta property="og:description" content="※削除覚悟※ 躾がなってないので教育します。後半の屈辱シーンは必見。">
+    <meta name="twitter:description" content="※削除覚悟※ 躾がなってないので教育します。後半の屈辱シーンは必見。">
+
+    <!-- 画像の設定（後で修正します） -->
+    <meta property="og:image" content="https://DUMMY-URL/card.png?v=s1">
+    <meta name="twitter:image" content="https://DUMMY-URL/card.png?v=s1">
+
+
+    <!-- ▼▼▼ デザイン設定（黒背景・怪しい雰囲気） ▼▼▼ -->
+    <style>
+        body {
+            background-color: #050505; /* 真っ黒 */
+            color: #eeeeee; /* 白文字 */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container { width: 90%; max-width: 400px; }
+        .play-btn {
+            background: linear-gradient(45deg, #c31432, #240b36); /* 赤紫のグラデーション */
+            color: white;
+            border: 1px solid #ff4d6d;
+            padding: 20px 0;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 19px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            margin: 25px 0;
+            box-shadow: 0 0 15px rgba(195, 20, 50, 0.6); /* 光らせる */
+        }
+        .warning {
+            color: #ff3333;
+            font-size: 13px;
+            border: 1px solid #ff3333;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <!-- ▼▼▼ アプリへ飛ばす仕掛け ▼▼▼ -->
+    <script>
+        var targetUrl = "https://lite.tiktok.com/t/ZS91fhwGHRk8J-OicBG/";
+        function openTikTok() {
+            window.location.href = targetUrl;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="warning">R-18 指定</div>
+        <div class="title" style="font-weight: bold; font-size: 20px;">
+            動画を再生するには<br>下のボタンを押してください
+        </div>
+        <!-- ボタン -->
+        <button class="play-btn" onclick="openTikTok()">
+            完全版を無料で見る
+        </button>
+        <div class="note" style="font-size: 11px; color: #666;">
+            ※リンク切れの場合はご容赦ください
+        </div>
+    </div>
+</body>
+</html>
